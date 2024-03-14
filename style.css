@@ -311,7 +311,6 @@
 }
 
 .div-rate{
-
   text-align: center;
   justify-content: center;
 }
@@ -448,6 +447,10 @@
 
 .modal-text {
   color: #333333;
+}
+
+.form-select{
+  width: 40%;
 }
 
 .bg-transparent{
