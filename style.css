@@ -66,6 +66,10 @@
    
 }
 
+.col-12{
+  padding: 0;
+}
+
 .navbar-brand{
    margin-left: 5px;
    font-size: 20px;
@@ -85,6 +89,7 @@
 .title-area{
    min-height: 400px;
    text-align: center;
+   justify-content: center !important;
 }
 
 .main-title{
@@ -349,9 +354,11 @@
 }
 
 .active-table{
-  width: auto;
-  height: auto;
-  margin: 20px;
+
+  width: 80%;
+  height: 90%;
+  border: 3px solid #333333;
+  border-radius: 4px;
   background-color: whitesmoke;
 }
 
@@ -442,3 +449,32 @@
 .modal-text {
   color: #333333;
 }
+
+.bg-transparent{
+  background-color: transparent;
+}
+
+.prog-div{
+   
+  margin: 5px;
+
+}
+
+.pgbar{
+  width: 50%;
+  background-color: #ffa500;
+}
+
+.table-title{
+  color: lightgreen;
+}
+
+.menu-list{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+h5{
+  margin: 0;
+}
+
