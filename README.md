@@ -1,4 +1,4 @@
-Login info:
+Login info: <br>
 -- username: student
 -- username: administrator
 -- username: moderator
