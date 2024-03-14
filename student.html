@@ -38,14 +38,90 @@
                     <div class="card-body">
                         <img src="student.png" alt="Slika studenta" width="150px" class="rounded-circle img-fluid">
                         <h3>pericpera3</h3>
-                        <ul>
-                            <li>
-                                <a href="kupovina_bonova.html">Kupovina bonova</a>
-                            </li>
-                            <li>
-                                <a href="#">Kupovina digitalnog žetona</a>
-                            </li>
-                        </ul>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalDorucak">
+                            Doručak
+                        </button>
+  
+                        <div class="modal fade" id="qrModalDorucak" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content align-items-center">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Doručak</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" id="qrcode1"></div>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalRucak">
+                            Ručak
+                        </button>
+  
+                        <div class="modal fade" id="qrModalRucak" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content align-items-center">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Ručak</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" id="qrcode2"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalVecera">
+                            Večera
+                        </button>
+  
+                        <div class="modal fade" id="qrModalVecera" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content align-items-center">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Večera</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" id="qrcode3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalBuy">
+                            Kupi žeton
+                        </button>
+
+                        <div class="modal fade" id="qrModalBuy" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-text">
+                                <div class="modal-content align-items-center">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="qrModalLabel">Žeton</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <h5>Trenutno stanje: 16000 din</h5>
+                                    <h6>Cena žetona: 1000 din</h6>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kupi</button>
+                                </div>
+                            </div>
+                        </div>  
+
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModal">
+                            Žeton
+                        </button>
+  
+                        <div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content align-items-center">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Žeton</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" id="qrcode"></div>
+                                </div>
+                            </div>
+                        </div>  
+                        
                     </div>
                 </div>
             </div>
@@ -165,5 +241,15 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode"), "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
+        new QRCode(document.getElementById("qrcode1"), "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
+        new QRCode(document.getElementById("qrcode2"), "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
+        new QRCode(document.getElementById("qrcode3"), "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley");
+    </script>
+
 </body>
 </html>
