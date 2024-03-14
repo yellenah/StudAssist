@@ -39,88 +39,95 @@
                         <img src="student.png" alt="Slika studenta" width="150px" class="rounded-circle img-fluid">
                         <h3>pericpera3</h3>
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalDorucak">
-                            Doručak
-                        </button>
-  
-                        <div class="modal fade" id="qrModalDorucak" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content align-items-center">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Doručak</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <ul>
+                            <li>
+                                <button type="button" class="btn btn-primary my-1" data-bs-toggle="modal" data-bs-target="#qrModalDorucak">
+                                    Doručak
+                                </button>
+          
+                                <div class="modal fade" id="qrModalDorucak" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content align-items-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="qrModalLabel" style="color: black;">Doručak</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="qrcode1"></div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body" id="qrcode1"></div>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalRucak">
-                            Ručak
-                        </button>
-  
-                        <div class="modal fade" id="qrModalRucak" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content align-items-center">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Ručak</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>  
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary my-1" data-bs-toggle="modal" data-bs-target="#qrModalRucak">
+                                    Ručak
+                                </button>
+          
+                                <div class="modal fade" id="qrModalRucak" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content align-items-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="qrModalLabel" style="color: black;">Ručak</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="qrcode2"></div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body" id="qrcode2"></div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalVecera">
-                            Večera
-                        </button>
-  
-                        <div class="modal fade" id="qrModalVecera" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content align-items-center">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Večera</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary my-1" data-bs-toggle="modal" data-bs-target="#qrModalVecera">
+                                    Večera
+                                </button>
+          
+                                <div class="modal fade" id="qrModalVecera" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content align-items-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="qrModalLabel" style="color: black;">Večera</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="qrcode3"></div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body" id="qrcode3"></div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModalBuy">
-                            Kupi žeton
-                        </button>
-
-                        <div class="modal fade" id="qrModalBuy" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-text">
-                                <div class="modal-content align-items-center">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="qrModalLabel">Žeton</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary my-1" data-bs-toggle="modal" data-bs-target="#qrModalBuy">
+                                    Kupi žeton
+                                </button>
+        
+                                <div class="modal fade" id="qrModalBuy" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-text">
+                                        <div class="modal-content align-items-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="qrModalLabel">Žeton</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <h5>Trenutno stanje: 16000 din</h5>
+                                            <h6>Cena žetona: 1000 din</h6>
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kupi</button>
+                                        </div>
                                     </div>
-                                    <h5>Trenutno stanje: 16000 din</h5>
-                                    <h6>Cena žetona: 1000 din</h6>
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kupi</button>
-                                </div>
-                            </div>
-                        </div>  
-
-                        
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#qrModal">
-                            Žeton
-                        </button>
-  
-                        <div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content align-items-center">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="qrModalLabel" style="color: black;">Žeton</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>  
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary my-1" data-bs-toggle="modal" data-bs-target="#qrModal">
+                                    Žeton
+                                </button>
+          
+                                <div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content align-items-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="qrModalLabel" style="color: black;">Žeton</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="qrcode"></div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body" id="qrcode"></div>
-                                </div>
-                            </div>
-                        </div>  
+                                </div> 
+                            </li>
+                        </ul> 
                         
                     </div>
                 </div>
