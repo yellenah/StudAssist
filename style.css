@@ -387,7 +387,7 @@
    color: red;
 }
 
-.studentSidebar .sidebar, .adminCard .card{
+.studentSidebar .card, .adminCard .card{
    background-color: rgb(39, 123, 39);
    color: white;
 }
@@ -402,10 +402,14 @@
    text-align: center;
 }
 
-.studentSidebar .card .card-body a, .adminCard .card .card-body a{
+.studentSidebar .card .card-body a, .adminCard .card .card-body a, .linkNedekorisani a{
    display: block;
    color: white;
    text-decoration: none;
+}
+
+.linkNedekorisani a:hover{
+   color: lightgray;
 }
 
 .studentSidebar .card .card-body ul, .adminCard .card .card-body ul{
@@ -414,4 +418,9 @@
 
 .studentContent .content {
    background-color: whitesmoke;
+}
+
+.studentSidebar .flex-item{
+   background-color: rgb(108, 21, 108);
+   color: white;
 }
