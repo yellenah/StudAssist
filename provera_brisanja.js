@@ -1,5 +1,3 @@
-//let username = document.getElementById("usernameDel");
-
 let contactForm = document.getElementById("form");
 
 contactForm.addEventListener("submit", function (e) {
